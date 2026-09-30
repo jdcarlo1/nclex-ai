@@ -1,5 +1,5 @@
 import { useState, Fragment } from "react";
-import { Link } from "wouter";
+import { Link } from "wouter";import BooksSection from "@/components/BooksSection";
 import { Button } from "@/components/ui/button";
 import {
   CheckCircle,
@@ -834,12 +834,12 @@ export default function Landing() {
           <span className="font-bold text-gray-900 text-xl">NCLEX AI</span>
           <span className="text-2xl font-extrabold text-blue-600 ml-1">nclexai.org</span>
         </div>
-        <Link href="/quiz">
+        <div className="flex items-center gap-4"><a href="/books/" className="text-sm font-semibold text-gray-700 hover:text-blue-600">Books</a><Link href="/quiz">
           <Button size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
             Start Free
           </Button>
         </Link>
-      </nav>
+      </div></nav>
 
       {/* Member login bar */}
       <div className="bg-gray-900 text-white text-center py-2 px-4">
@@ -1079,7 +1079,7 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      <BooksSection />{/* Final CTA */}
       <section className="bg-gray-900 py-16 px-6 text-center">
         <h2 className="text-3xl font-bold text-white mb-4">
           Ready to pass the NCLEX?
