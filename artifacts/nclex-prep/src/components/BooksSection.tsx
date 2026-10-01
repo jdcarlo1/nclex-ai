@@ -9,6 +9,7 @@ const books = [
   { title: "Pediatric", img: "/books/images/peds-cover.jpg" },
   { title: "Psychiatric", img: "/books/images/psych-cover.jpg" },
   { title: "Pathophysiology", img: "/books/images/patho-cover.jpg" },
+  { title: "Master Comparison Flashcards", img: "/books/images/comparison-cover.jpg"  },
 ];
 
 export default function BooksSection() {
